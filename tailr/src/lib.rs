@@ -25,7 +25,7 @@ pub struct Config {
 }
 
 pub fn get_args() -> MyResult<Config> {
-    let matches = App::new("headr")
+    let matches = App::new("tailr")
         .version("0.1.0")
         .author("Fukkatsuso <fukkatsuso.git+github@gmail.com>")
         .about("Rust tail")
