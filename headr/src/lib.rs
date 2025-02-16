@@ -50,7 +50,7 @@ pub fn get_args() -> MyResult<Config> {
         .value_of("lines")
         .map(parse_positive_int)
         .transpose()
-        .map_err(|e| format!("illegal byte count -- {}", e))?;
+        .map_err(|e| format!("illegal line count -- {}", e))?;
 
     let bytes = matches
         .value_of("bytes")
